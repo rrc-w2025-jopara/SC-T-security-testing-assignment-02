@@ -17,7 +17,7 @@ function getUserInput(): Promise<string> {
     });
 
     return new Promise((resolve) => {
-        rl.question('Enter your name: ', (answer) => {
+        rl.question('Enter your name: ', (answers) => {
             rl.close();
             resolve(answer);
         });
